@@ -1,0 +1,38 @@
+{
+  "name": "marcusslv6/StampPDF",
+  "description": "Projeto que pega um arquivo PDF e adiciona uma marca d`agua com texto personalizado.",
+  "minimum-stability": "stable",
+  "type": "library",
+  "license": "proprietary",
+  "authors": [
+    {
+      "name": "Marcus Vinicius da Silva",
+      "email": "marcusviniciusdasilva6@gmail.com"
+    }
+  ],
+  "require": {
+    "uvinum/pdf-watermarker": "^1.0",
+    "intervention/image": "^2.5",
+    "intervention/imagecache": "^2.5"
+  },
+  "require-dev":{
+    "squizlabs/php_codesniffer": "^3.5",
+    "phan/phan": "^4.0"
+  },
+  "scripts": {
+    "cs": "phpcs --standard=PSR12 src/",
+    "phan": "phan --allow-polyfill-parser",
+    "check": [
+      "@phan",
+      "@cs"
+    ]
+  },
+  "autoload": {
+    "files": [
+      "src/Helpers/helpers.php"
+    ],
+    "psr-4": {
+      "StampPDF\\Watermark\\" : "src/"
+    }
+  }
+}

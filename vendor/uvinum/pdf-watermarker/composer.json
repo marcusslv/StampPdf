@@ -1,0 +1,29 @@
+{
+    "name": "uvinum/pdf-watermarker",
+    "type": "library",
+    "description": "Simple PDF Watermarker",
+    "license": "MIT",
+    "keywords": [
+        "pdf",
+        "watermark"
+    ],
+    "authors": [
+        {
+            "name": "binarystash",
+            "homepage": "http://www.binarystash.net/"
+        },
+        {
+            "name": "Jeroen v.d. Gulik",
+            "homepage": "https://github.com/jeroenvdgulik"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.0",
+        "setasign/fpdi-fpdf": "^2.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "Uvinum\\PDFWatermark\\": "src"
+        }
+    }
+}

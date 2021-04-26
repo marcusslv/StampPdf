@@ -1,0 +1,7 @@
+vendor
+pdfwatermarker-test.php
+test-output.pdf
+output
+phpdocs
+phpdocsmarkdown
+composer.lock
